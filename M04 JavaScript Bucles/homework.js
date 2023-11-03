@@ -5,6 +5,12 @@ function obtenerMayor(x, y) {
    // Retornar el número más grande.
    // Si son iguales, retornar cualquiera de los dos.
    // Tu código:
+   if (x > y || x === y) {
+      return x;
+   } else if (x < y) {
+      return y;
+   }
+
 }
 
 function mayoriaDeEdad(edad) {
@@ -12,6 +18,10 @@ function mayoriaDeEdad(edad) {
    // Si tiene 18 años ó más debe retornar el string: "Allowed".
    // Caso contrario: "Not allowed".
    // Tu código:
+   if (edad >= 18) {
+      return "Allowed";
+   }
+   return "Not allowed";
 }
 
 function conection(status) {
@@ -47,12 +57,20 @@ function esDiezOCinco(num) {
    // Retornar true si "num" es 10 o 5.
    // De lo contrario, retornar false.
    // Tu código:
+   if (num === 5|| num === 10){
+      return true; 
+   }
+   return false; 
 }
 
 function estaEnRango(num) {
    // Retornar true si "num" es menor que 50 y mayor que 20.
    // De lo contrario, retornar false.
    // Tu código:
+   if (num < 50 && num > 20) {
+      return true; 
+   }
+   return false; 
 }
 
 function esEntero(num) {
